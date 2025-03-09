@@ -1,5 +1,5 @@
-id: quest_giver
-name: Görev Ustası
+id: quest_giver # Not need to change
+name: Görev Ustası # DISPLAY_NAME
 entity-type: PLAYER
 location:
   world: world
@@ -8,14 +8,14 @@ location:
   z: -180.5
   yaw: 180.0
   pitch: 0.0
-skin: "liveyourmovie"  # Player name whose skin to use
+skin: "liveyourmovie"  # SKIN_PLAYER_NAME - or texture
 dialogue:
   lines:
     - text: "Maceracı! Tam da seni arıyordum."
     - text: "Köyümüz tehlikede ve yardımına ihtiyacımız var."
       options:
-        - id: accept_quest
+        - id: accept_quest # A function that will be called
           text: "Görevi kabul et"
           command: "quest start village_defense"
-        - id: decline
-          text: "Şu an müsait değilim" 
+        - id: decline # A function that will be called
+          text: "Şu an müsait değilim" # A message appears after selecting the option above
