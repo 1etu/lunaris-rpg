@@ -1,0 +1,6 @@
+name: lunaris
+version: '1.0.0'
+main: lunaris.core.Lunaris
+description: A complete RPG plugin for Lunaris Minecraft Gameserver
+api-version: 1.19
+depend: [ProtocolLib]

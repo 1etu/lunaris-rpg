@@ -1,0 +1,21 @@
+id: quest_giver
+name: Görev Ustası
+entity-type: PLAYER
+location:
+  world: world
+  x: 150.5
+  y: 65.0
+  z: -180.5
+  yaw: 180.0
+  pitch: 0.0
+skin: "liveyourmovie"  # Player name whose skin to use
+dialogue:
+  lines:
+    - text: "Maceracı! Tam da seni arıyordum."
+    - text: "Köyümüz tehlikede ve yardımına ihtiyacımız var."
+      options:
+        - id: accept_quest
+          text: "Görevi kabul et"
+          command: "quest start village_defense"
+        - id: decline
+          text: "Şu an müsait değilim" 
