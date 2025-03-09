@@ -62,7 +62,7 @@ public class PlayerSkills {
         Player player = account.getPlayer();
         if (player != null && player.isOnline()) {
             player.sendMessage(String.format(
-                "§3+%d %s XP §7(%d/100)",
+                "§3+%d %s Deneyim §7(%d/100)",
                 amount,
                 type.getDisplayName(),
                 skill.getXp()
@@ -71,7 +71,7 @@ public class PlayerSkills {
             // If level up occurred
             if (skill.getLevel() > oldLevel) {
                 player.sendMessage(String.format(
-                    "§6⭐ §e%s level up! §7(%d → %d)",
+                    "§6⭐ §e%s Seviye Atladın! §7(%d → %d)",
                     type.getDisplayName(),
                     oldLevel,
                     skill.getLevel()
